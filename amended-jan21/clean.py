@@ -2,7 +2,9 @@ import pandas as pd
 
 data = pd.read_csv('data.csv', dtype={'zipcode': str})
 
-data['amount'] = data['amount'].str[1:].str.replace(",","").astype('float', raise_on_error=False)
+#Convert amounts to numeric values
+data['amount'] = data['amount'].str[1:].str.replace(",","")
+data['amount'] = pd.to_numeric(data['amount'], errors='coerce')
 
 #Manually add first two claims
 claim1 = {'name': 'A James Foxworthy',
