@@ -2,6 +2,8 @@
 
 An analysis of the claimant data from the Premier Cru bankruptcy filing.
 
+The initial filing only contained information for claimants with first names beginning with A and B. On Jan. 21st, the filing was amended to include information for all claimants. Both sets of data are analyzed here.
+
 ## List of files
 
 - `filing.pdf` The original filing
